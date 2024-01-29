@@ -9,7 +9,6 @@ import WorkExperience from "@/components/WorkExperience";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import ContactMe from "@/components/ContactMe";
-import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,21 +41,9 @@ export default function Home() {
         <Projects />
       </section>
       {/* Contact Me */}
-      <section id="contact" className="snap-start">
+      <section id="contactme" className="snap-start">
         <ContactMe />
       </section>
-
-      {/* <Link href="#hero"> */}
-      <footer className="sticky bottom-5 w-full cursor-pointer">
-        <div className="flex items-center justify-center">
-          <img
-            className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0"
-            src="https://scontent-yyz1-1.xx.fbcdn.net/v/t39.30808-6/337227120_3574567802778107_6470771665603914279_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=SZBm9cbRf_cAX_YfUd7&_nc_ht=scontent-yyz1-1.xx&oh=00_AfA_uzFlHRRozHwLif2fisldBLvNBQHj-v2a4sRmfEA2zQ&oe=65B3DD3C"
-            alt="Image Not Found"
-          />
-        </div>
-      </footer>
-      {/* </Link> */}
     </div>
   );
 }

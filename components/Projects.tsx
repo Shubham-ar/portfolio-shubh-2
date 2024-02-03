@@ -1,9 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-type Props = {};
+import { Project } from "@/typings";
+import { urlFor } from "@/sanity";
+type Props = {
+  projects: Project[];
+};
 
-const Projects = (props: Props) => {
-  const projects = [1, 2, 3, 4, 5];
+const Projects = ({ projects }: Props) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -38,7 +41,7 @@ const Projects = (props: Props) => {
               }}
               transition={{ duration: 1.2 }}
               viewport={{ once: true }}
-              src="https://scontent-yyz1-1.xx.fbcdn.net/v/t39.30808-6/337227120_3574567802778107_6470771665603914279_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=SZBm9cbRf_cAX_YfUd7&_nc_ht=scontent-yyz1-1.xx&oh=00_AfA_uzFlHRRozHwLif2fisldBLvNBQHj-v2a4sRmfEA2zQ&oe=65B3DD3C"
+              src={urlFor(project.image).url()}
               alt="Image Not Found"
               className="w-[300px] h-[300px]"
             />
@@ -47,16 +50,22 @@ const Projects = (props: Props) => {
                 <span className="underline decoration-[#F7AB0A]/50">
                   Case Study {i + 1} of {projects.length}:
                 </span>
-                NETFLIX Clone
+                {project?.title}
               </h4>
 
+              <div className="flex items-center- space-x-2 justify-center">
+                {project?.technologies.map((technology) => (
+                  <img
+                    className="h-5 w-5"
+                    key={technology._id}
+                    src={urlFor(technology.image).url()}
+                    alt="Image not Found"
+                  />
+                ))}
+              </div>
+
               <p className="text-lg text-center md:text-left ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
-                cum iusto quas iure eos sunt, quaerat magni temporibus pariatur
-                laboriosam atque! Ab sed quod libero natus accusamus iusto unde
-                exercitationem animi fugit quia quaerat repellendus ut fuga,
-                iure nemo magnam vitae, saepe accusantium sit est quis minus
-                sequi harum commodi?
+                {project?.summary}
               </p>
             </div>
           </motion.div>

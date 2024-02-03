@@ -3,6 +3,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 Sanity Link: 
 https://portfolio-shubh-2-build-deploy.sanity.studio/studio/structure
 
+Live at:
+shubhamjhammb.vercel.app
+
+-- yet to complete config and add details.
+
 
 ## Getting Started
 

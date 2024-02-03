@@ -25,6 +25,7 @@ const Projects = ({ projects }: Props) => {
       >
         {projects.map((project, i) => (
           <motion.div
+            key={project._id}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}

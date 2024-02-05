@@ -23,9 +23,9 @@ const Projects = ({ projects }: Props) => {
       snap-mandatory z-20 scrollbar scrollbar-thin
        scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80"
       >
-        {projects.map((project, i) => (
+        {projects?.map((project, i) => (
           <motion.div
-            key={project._id}
+            key={project?._id}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
@@ -42,14 +42,14 @@ const Projects = ({ projects }: Props) => {
               }}
               transition={{ duration: 1.2 }}
               viewport={{ once: true }}
-              src={urlFor(project.image).url()}
+              src={urlFor(project?.image).url()}
               alt="Image Not Found"
               className="w-[300px] h-[300px]"
             />
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-4xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
-                  Case Study {i + 1} of {projects.length}:
+                  Case Study {i + 1} of {projects?.length}:
                 </span>
                 {project?.title}
               </h4>

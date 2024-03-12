@@ -31,19 +31,19 @@ const ContactMe = (props: Props) => {
       <div className="flex flex-col space-y-10">
         <h4 className="text-4xl font-semibold text-center">
           I have just what you need.
-          <span className="decoration-[#F7AB0A]/50 underline">Lets Talk.</span>
+          <span className="decoration-[#2C6975]/50 underline">Lets Talk.</span>
         </h4>
         <div className="space-y-10">
           <div className="flex items-center space-x-5 justify-center">
-            <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse " />
+            <PhoneIcon className="text-[#2C6975] h-7 w-7 animate-pulse " />
             <p className="text-2xl">+1(647)7030295</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse " />
+            <MapPinIcon className="text-[#2C6975] h-7 w-7 animate-pulse " />
             <p className="text-2xl">South Etobicoke, ON</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse " />
+            <EnvelopeIcon className="text-[#2C6975] h-7 w-7 animate-pulse " />
             <p className="text-2xl">sjhamb.03@gmail.com</p>
           </div>
         </div>
@@ -79,7 +79,7 @@ const ContactMe = (props: Props) => {
           ></textarea>
           <button
             type="submit"
-            className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg"
+            className="bg-[#2C6975] py-5 px-10 rounded-md text-black font-bold text-lg"
           >
             Submit
           </button>

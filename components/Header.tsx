@@ -39,17 +39,7 @@ function Header({ socials }: Props) {
             bgColor="transparent"
           />
         ))}
-
-        {/* <SocialIcon
-          url="https://www.linkedin.com/in/shubhamjhamb"
-          fgColor="gray"
-          bgColor="transparent"
-        />
-        <SocialIcon
-          url="https://www.linkedin.com/in/shubhamjhamb"
-          fgColor="gray"
-          bgColor="transparent"
-        /> */}
+        {/* [#2C6975] */}
       </motion.div>
       <motion.div
         initial={{
@@ -65,10 +55,11 @@ function Header({ socials }: Props) {
         transition={{
           duration: 1.5,
         }}
-        className="flex flex-row items-center text-gray-300"
+        className="flex flex-row items-center text-gray-300 cursor-pointer"
       >
         {/* Contact Me */}
         <SocialIcon
+          className="cursor-pointer"
           network="email"
           fgColor="gray"
           bgColor="transparent

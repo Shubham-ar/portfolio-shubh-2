@@ -9,6 +9,8 @@ import WorkExperience from "@/components/WorkExperience";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import ContactMe from "@/components/ContactMe";
+import Link from "next/link";
+import { HomeIcon } from "@heroicons/react/24/solid";
 import { Experience, PageInfo, Project, Skill, Social } from "../typings";
 import { GetStaticProps } from "next";
 import { fetchPageInfo } from "@/utils/fetchPageInfo";
@@ -36,9 +38,12 @@ export default function Home({
 }: Props) {
   return (
     <div
-      className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap  overflow-y-scroll overflow-x-hidden z-0 
-    scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80"
+      className="bg-[#F8F8F8] text-black h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 
+    scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#2C6975]/80"
     >
+      <Head>
+        <title>👨🏻‍💻 Shubham's Portfolio</title>
+      </Head>
       <Header socials={socials} />
       {/* Hero */}
       <section id="hero" className="snap-start">
@@ -49,7 +54,7 @@ export default function Home({
         <About pageInfo={pageInfo} />
       </section>
       {/* Experience */}
-      <section id="workexperience" className="snap-center">
+      <section id="experience" className="snap-center">
         <WorkExperience experiences={experiences} />
       </section>
       {/* Skills */}
@@ -62,9 +67,19 @@ export default function Home({
         <Projects projects={projects} />
       </section>
       {/* Contact Me */}
-      <section id="contactme" className="snap-start">
+      <section id="contact" className="snap-start">
         <ContactMe />
       </section>
+
+      <Link href="#hero">
+        <footer className="sticky bottom-5 w-full cursor-pointer">
+          <div className="flex items-center justify-center">
+            <div className="h-10 w-10 bg-[#2C6975]/80 rounded-full flex items-center justify-center">
+              <HomeIcon className="h-7 w-17 pb-0.5 hover:grayscale-100 text-white animate-pulse" />
+            </div>
+          </div>
+        </footer>
+      </Link>
     </div>
   );
 }

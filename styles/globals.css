@@ -4,20 +4,12 @@
 
 @layer components {
   .heroButton {
-    @apply px-6 py-2 border border-[#242424] rounded-full uppercase text-xs tracking-widest text-gray-500 transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7Ab0A]/40;
+    @apply px-3 md:px-6 py-2 border border-[#F8F8F8] rounded-full uppercase text-xs tracking-widest text-gray-500 transition-all hover:border-[#2C6975]/40 hover:text-[#2C6975]/40;
   }
 
   .contactInput {
-    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424]
-    text-gray-500 placeholder-gray-500 transition-all focus:border-[#F7AB0A]/40
-    focus:text-[#F7AB0A]/40 hover:border-[#F7AB0A]/40;
+    @apply outline-none border-b-2 bg-slate-400/20 rounded-lg px-6 py-3 md:py-4
+    text-gray-500 placeholder-gray-500 transition-all focus:border-[#2C6975]/40
+    focus:text-[#2C6975]/40 hover:border-[#2C6975]/40;
   }
 }
-/* } */
-/* lightGreen: "#68B2A0",
-        darkGreen: "#2C6975",
-        lightBackground: "#F8F8F8",
-        darkBackground: "#22262D",
-        darkBlack: "#000000",
-        grayColor: "#22262D",
-        yellowColor: "FFE033", */

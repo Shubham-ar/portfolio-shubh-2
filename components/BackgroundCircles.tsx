@@ -19,17 +19,17 @@ function BackgroundCircles({}: Props) {
       className="relative flex justify-center items-center"
     >
       <div
-        className="absolute border border-grayColor opacity-30 rounded-full h-[200px] w-[200px] mt-64 md:mt:52 
+        className="absolute border border-[#22262D] opacity-30 rounded-full h-[200px] w-[200px] mt-64 md:mt:52 
             animate-ping"
       />
       <div />
       <div
-        className="absolute border border-grayColor opacity-30 rounded-full h-[300px] w-[300px] mt-64 md:mt:52 
+        className="absolute border border-[#22262D] opacity-30 rounded-full h-[300px] w-[300px] mt-64 md:mt:52 
             animate-ping"
       />
       <div />
       <div
-        className="absolute border border-grayColor  opacity-30 rounded-full h-[500px] w-[500px] mt-64 md:mt:52 
+        className="absolute border border-[#22262D]  opacity-30 rounded-full h-[500px] w-[500px] mt-64 md:mt:52 
             animate-ping"
       />
       <div />
@@ -39,7 +39,7 @@ function BackgroundCircles({}: Props) {
       />
       <div />
       <div
-        className="absolute border border-grayColor opacity-30 rounded-full h-[800px] w-[800px] mt-64 md:mt:52 
+        className="absolute border border-[#22262D] opacity-30 rounded-full h-[800px] w-[800px] mt-64 md:mt:52 
             animate-ping"
       />
       <div />
